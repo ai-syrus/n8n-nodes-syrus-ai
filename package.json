@@ -1,0 +1,65 @@
+{
+  "name": "n8n-nodes-syrus-ai",
+  "version": "1.0.0",
+  "description": "n8n community node for Syrus AI - A Gemini-based AI chat model with advanced configuration options",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "ai",
+    "chat",
+    "gemini",
+    "syrus-ai",
+    "langchain"
+  ],
+  "license": "MIT",
+  "homepage": "https://www.syrus-ai.com",
+  "author": {
+    "name": "Syrus AI",
+    "email": "suporte@syrus-ai.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ai-syrus/n8n-nodes-syrus-ai.git"
+  },
+  "engines": {
+    "node": ">=18.10",
+    "pnpm": ">=9.1"
+  },
+  "packageManager": "pnpm@9.1.4",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && gulp build:icons",
+    "dev": "tsc --watch",
+    "format": "prettier nodes credentials --write",
+    "lint": "eslint nodes credentials package.json",
+    "lintfix": "eslint nodes credentials package.json --fix",
+    "prepublishOnly": "npm run build && npm run lint",
+    "test": "jest"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/SyrusAiApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/SyrusAi/SyrusAi.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "@typescript-eslint/eslint-plugin": "^6.14.0",
+    "@typescript-eslint/parser": "^6.14.0",
+    "eslint": "^8.57.1",
+    "eslint-plugin-n8n-nodes-base": "^1.0.0",
+    "gulp": "^4.0.2",
+    "n8n-workflow": "^1.40.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5.5.3"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}

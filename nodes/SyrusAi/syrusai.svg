@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="syrusGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4F46E5;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7C3AED;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background rounded rectangle -->
+  <rect width="60" height="60" rx="12" ry="12" fill="url(#syrusGradient)"/>
+  
+  <!-- Main circle with "1" -->
+  <circle cx="22" cy="22" r="12" fill="white" stroke="none"/>
+  <text x="22" y="28" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="url(#syrusGradient)">1</text>
+  
+  <!-- Curved lines representing AI/connectivity -->
+  <path d="M 38 20 Q 45 25 42 32" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+  <path d="M 40 35 Q 47 40 44 47" stroke="white" stroke-width="3" fill="none" stroke-linecap="round"/>
+  
+  <!-- Small accent circle -->
+  <circle cx="45" cy="15" r="3" fill="white" opacity="0.8"/>
+</svg>
+
